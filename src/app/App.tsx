@@ -659,7 +659,7 @@ export default function App() {
                 onMouseEnter={(e) => (e.currentTarget.style.color = "#c9a227")}
                 onMouseLeave={(e) => (e.currentTarget.style.color = "#8a7a5a")}
               >
-                ⟶ View Full Armory on GitHub
+                ⟶ View all projects on GitHub
               </a>
             </section>
 
@@ -668,7 +668,7 @@ export default function App() {
               id="scriptorium"
               ref={(el) => { sectionRefs.current["scriptorium"] = el; }}
             >
-              <SectionHeading rune="🪶">The Scriptorium</SectionHeading>
+              <SectionHeading rune="🪶">Blog</SectionHeading>
               <div>
                 {POSTS.map((p) => <ScrollEntry key={p.title} {...p} />)}
               </div>
