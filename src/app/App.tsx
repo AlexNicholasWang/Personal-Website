@@ -572,36 +572,6 @@ export default function App() {
                   All That Matters — Justin Bieber
                 </p>
               </div>
-
-              {/* 88x31 Badges */}
-              <div className="mt-5 flex flex-wrap gap-1">
-                {[
-                  { label: "Visca Barca!", bg: "#2a1a05", border: "#c9a22740" },
-                  { label: "Glory To God!", bg: "#1a0505", border: "#8b1a1a60" },
-                  { label: "Go Eagles!", bg: "#051a05", border: "#2a7a2a60" },
-                  { label: "Roll Sals!", bg: "#1a1205", border: "#c9a22740" },
-                ].map((b) => (
-                  <span
-                    key={b.label}
-                    style={{
-                      display: "inline-block",
-                      width: "88px",
-                      height: "31px",
-                      lineHeight: "29px",
-                      textAlign: "center",
-                      background: b.bg,
-                      border: `1px solid ${b.border}`,
-                      fontSize: "8px",
-                      color: "#c9a227",
-                      fontFamily: "'Cinzel', serif",
-                      letterSpacing: "0.06em",
-                      cursor: "pointer",
-                    }}
-                  >
-                    {b.label}
-                  </span>
-                ))}
-              </div>
             </div>
           </aside>
 
