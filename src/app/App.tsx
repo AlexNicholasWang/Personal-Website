@@ -103,16 +103,16 @@ const STYLES = `
 ───────────────────────────────────────────── */
 const PROJECTS = [
   {
-    name: "The Siege Engine",
-    desc: "A blazing-fast build tool that lays waste to slow compile times. Written in Rust, zero config.",
+    name: "PetaLux",
+    desc: "A mechanical-blooming flower lamp that destroys darkness. Written in Swift, zero config.",
     rune: "⚔️",
-    lang: "Rust",
+    lang: "Swift",
     langColor: "#ce422b",
     stars: 2841,
   },
   {
-    name: "Grimoire",
-    desc: "A local-first knowledge base for developers. Markdown, code blocks, diagrams — all offline.",
+    name: "Cosmas",
+    desc: "An AI Benefits Eligibility Agent that fights on your behalf to get you the perks you deserve. Built with TypeScript and React.",
     rune: "📜",
     lang: "TypeScript",
     langColor: "#3178c6",
@@ -138,19 +138,19 @@ const PROJECTS = [
 
 const POSTS = [
   {
-    date: "X June, Anno Domini 2026",
-    title: "On the Craft of Building Things That Last",
-    excerpt: "Most software rots within five years. A meditation on writing code as if it might survive you.",
+    date: "13 June, Anno Domini 2026",
+    title: "The World Cup: Brazil vs. Morroco",
+    excerpt: "Me, my dad, my brother, and my grandfather watched the World Cup together, many unforgettable moments were had. Unlukcy for both teams, ended in a draw",
   },
   {
-    date: "XXII May, Anno Domini 2026",
-    title: "The Forgotten Art of the Personal Website",
-    excerpt: "Why every developer should have a corner of the web that belongs to no algorithm.",
+    date: "31 May, Anno Domini 2026",
+    title: "The End?: Reflections On The Finish Of My First Year @ UCLA",
+    excerpt: "Finally finished my first year here at UCLA. It's been a year of immense growth, challenges, and unforgettable memories. Go Bruins!",
   },
   {
-    date: "III April, Anno Domini 2026",
-    title: "Rust for the Weary TypeScript Developer",
-    excerpt: "A guide for those ready to trade runtime errors for compiler wrath — and why it is worth it.",
+    date: "18 February, Anno Domini 2026",
+    title: "The Journey to Salvation: Let's Get Started",
+    excerpt: "Today is the day that I was catechized by my preist and formally accepted Orthodoxy into my life.",
   },
 ];
 
