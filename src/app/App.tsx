@@ -155,11 +155,11 @@ const POSTS = [
 ];
 
 const LINKS = [
-  { label: "GitHub", href: "#", symbol: "⚔" },
-  { label: "Linkedin", href: "#", symbol: "🐘" },
-  { label: "Spotify", href: "#", symbol: "♬" },
-  { label: "Instagram", href: "#", symbol: "📡" },
-  { label: "Email", href: "#", symbol: "✉" },
+  { label: "GitHub", href: "https://github.com/AlexNicholasWang", symbol: "🐙" },
+  { label: "Linkedin", href: "https://www.linkedin.com/in/alexwang67/", symbol: "💼" },
+  { label: "Spotify", href: "https://open.spotify.com/user/31y6ijwcsrjjgpdtal3sqvlf2kiy", symbol: "🎵" },
+  { label: "Instagram", href: "https://www.instagram.com/alex_wang770/", symbol: "📸" },
+  { label: "Email", href: "mailto:alexwang770@g.ucla.edu", symbol: "💌" },
 ];
 
 /* ─────────────────────────────────────────────
