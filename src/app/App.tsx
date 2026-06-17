@@ -566,10 +566,10 @@ export default function App() {
                 }}
               >
                 <p style={{ fontSize: "0.62rem", color: "#8b1a1a", letterSpacing: "0.15em", textTransform: "uppercase", fontFamily: "'Cinzel', serif" }}>
-                  ♬ Bardic Tale
+                  ♬ Now Playing ♬
                 </p>
                 <p style={{ fontSize: "0.8rem", color: "#c8b880", marginTop: "4px", fontStyle: "italic" }}>
-                  Immigrant Song — Led Zeppelin
+                  All That Matters — Justin Bieber
                 </p>
               </div>
 
