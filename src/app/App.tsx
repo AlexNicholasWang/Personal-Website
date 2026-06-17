@@ -649,10 +649,10 @@ export default function App() {
                 className="grid grid-cols-2 sm:grid-cols-4 gap-3"
               >
                 {[
-                  { rune: "🗡️", label: "Weapon", value: "Neovim" },
+                  { rune: "🗡️", label: "Weapon", value: "Dagon's Glare" },
                   { rune: "🌍", label: "Realm", value: "The Internet" },
-                  { rune: "📜", label: "Tongue", value: "TS · Go · Rust" },
-                  { rune: "⚗️", label: "School", value: "Self-taught" },
+                  { rune: "📜", label: "Tongue", value: "Python · C++ · Java"},
+                  { rune: "⚗️", label: "School", value: "UCLA" },
                 ].map(({ rune, label, value }) => (
                   <div
                     key={label}
