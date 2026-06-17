@@ -471,7 +471,7 @@ export default function App() {
                     textShadow: "0 0 20px rgba(201,162,39,0.3)",
                   }}
                 >
-                  Yourname
+                  Alexander Wang 
                 </h1>
                 <p
                   style={{
