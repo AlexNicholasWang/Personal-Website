@@ -537,13 +537,13 @@ export default function App() {
                     marginBottom: "8px",
                   }}
                 >
-                  ✦ Realm Status ✦
+                  ✦ The Orthodox Realm ✦
                 </p>
                 {[
-                  { label: "Guild", value: "Open Source" },
-                  { label: "Allegiance", value: "The Terminal" },
-                  { label: "Weapon", value: "Neovim + Rust" },
-                  { label: "Mood", value: "Questing 🌙" },
+                  { label: "Parish", value: "The Joy Of All Who Sorrow" },
+                  { label: "Patron Saint", value: "St. Nicholas The Wonderworker" },
+                  { label: "Book", value: "The Path To Salvation - St Theophian The Recluse" },
+                  { label: "Feast", value: "Nativity of Our Lord Jesus Christ" },
                 ].map(({ label, value }) => (
                   <div key={label} className="flex justify-between items-baseline mb-1">
                     <span style={{ fontSize: "0.68rem", color: "#6a5a3a", fontFamily: "'Cinzel', serif", letterSpacing: "0.08em" }}>
@@ -576,10 +576,10 @@ export default function App() {
               {/* 88x31 Badges */}
               <div className="mt-5 flex flex-wrap gap-1">
                 {[
-                  { label: "HANDMADE", bg: "#2a1a05", border: "#c9a22740" },
-                  { label: "NO TRACKERS", bg: "#1a0505", border: "#8b1a1a60" },
-                  { label: "OPEN SOURCE", bg: "#051a05", border: "#2a7a2a60" },
-                  { label: "MEDIEVAL WEB", bg: "#1a1205", border: "#c9a22740" },
+                  { label: "Visca Barca!", bg: "#2a1a05", border: "#c9a22740" },
+                  { label: "Glory To God!", bg: "#1a0505", border: "#8b1a1a60" },
+                  { label: "Go Eagles!", bg: "#051a05", border: "#2a7a2a60" },
+                  { label: "Roll Sals!", bg: "#1a1205", border: "#c9a22740" },
                 ].map((b) => (
                   <span
                     key={b.label}
@@ -632,14 +632,14 @@ export default function App() {
 
                 <div className="space-y-4" style={{ fontFamily: "'IM Fell English', serif", fontSize: "1.02rem", lineHeight: 1.9, color: "#a08a60" }}>
                   <p>
-                    Hark, traveller. I am a <span style={{ color: "#c9a227" }}>craftsperson of software</span> — a builder of tools that do not break, interfaces that do not lie, and systems that do not bow to the first sign of load.
+                    Hark, traveller. I am a <span style={{ color: "#c9a227" }}>craftsperson of software, </span> a soccer player, guitar player, and bungee jumping addict.
                   </p>
                   <p>
                     My apprenticeship began in the age of dial-up, when websites were built by hand and hosted on servers you actually owned. That spirit never left me. I write code for{" "}
                     <span style={{ color: "#8b1a1a", fontStyle: "italic" }}>the joy of building</span>, not for growth metrics.
                   </p>
                   <p>
-                    When not at the forge, I tend to old films, long walks in questionable weather, and a small collection of houseplants that are — against all odds — still alive.
+                    When not at the Terminal, I tend to philosophy, long walks in questionable weather, and a mix of skating and surfing in Venice Beach.
                   </p>
                 </div>
               </div>
@@ -649,8 +649,8 @@ export default function App() {
                 className="grid grid-cols-2 sm:grid-cols-4 gap-3"
               >
                 {[
-                  { rune: "🗡️", label: "Weapon", value: "Dagon's Glare" },
-                  { rune: "🌍", label: "Realm", value: "The Internet" },
+                  { rune: "🗡️", label: "Weapon", value: "Excalibur" },
+                  { rune: "🌍", label: "Realm", value: "Los Angeles" },
                   { rune: "📜", label: "Tongue", value: "Python · C++ · Java"},
                   { rune: "⚗️", label: "School", value: "UCLA" },
                 ].map(({ rune, label, value }) => (
@@ -672,7 +672,7 @@ export default function App() {
               id="armory"
               ref={(el) => { sectionRefs.current["armory"] = el; }}
             >
-              <SectionHeading rune="⚔️">The Armory</SectionHeading>
+              <SectionHeading rune="⚔️">Projects</SectionHeading>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-4">
                 {PROJECTS.map((p) => <ProjectCard key={p.name} {...p} />)}
               </div>
