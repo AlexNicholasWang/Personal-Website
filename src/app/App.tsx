@@ -156,9 +156,9 @@ const POSTS = [
 
 const LINKS = [
   { label: "GitHub", href: "#", symbol: "⚔" },
-  { label: "Mastodon", href: "#", symbol: "🐘" },
-  { label: "Last.fm", href: "#", symbol: "♬" },
-  { label: "RSS Feed", href: "#", symbol: "📡" },
+  { label: "Linkedin", href: "#", symbol: "🐘" },
+  { label: "Spotify", href: "#", symbol: "♬" },
+  { label: "Instagram", href: "#", symbol: "📡" },
   { label: "Email", href: "#", symbol: "✉" },
 ];
 
