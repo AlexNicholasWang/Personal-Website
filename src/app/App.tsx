@@ -108,7 +108,6 @@ const PROJECTS = [
     rune: "⚔️",
     lang: "Swift",
     langColor: "#ce422b",
-    stars: 2841,
   },
   {
     name: "Cosmas",
@@ -116,7 +115,6 @@ const PROJECTS = [
     rune: "📜",
     lang: "TypeScript",
     langColor: "#3178c6",
-    stars: 1203,
   },
   {
     name: "Dragon's Hoard",
@@ -124,7 +122,6 @@ const PROJECTS = [
     rune: "🐉",
     lang: "Go",
     langColor: "#00add8",
-    stars: 987,
   },
   {
     name: "The Oracle",
@@ -132,7 +129,6 @@ const PROJECTS = [
     rune: "🔮",
     lang: "Python",
     langColor: "#3572A5",
-    stars: 512,
   },
 ];
 
@@ -260,7 +256,7 @@ function SectionHeading({ children, rune = "⚜" }: { children: React.ReactNode;
 /* ─────────────────────────────────────────────
    PROJECT CARD
 ───────────────────────────────────────────── */
-function ProjectCard({ name, desc, rune, lang, langColor, stars }: (typeof PROJECTS)[0]) {
+function ProjectCard({ name, desc, rune, lang, langColor }: (typeof PROJECTS)[0]) {
   const [hovered, setHovered] = useState(false);
   return (
     <div
@@ -297,9 +293,6 @@ function ProjectCard({ name, desc, rune, lang, langColor, stars }: (typeof PROJE
               }}
             >
               {name}
-            </span>
-            <span style={{ fontSize: "0.72rem", color: "#8a7a5a", fontFamily: "'IM Fell English', serif", whiteSpace: "nowrap" }}>
-              ★ {stars.toLocaleString()}
             </span>
           </div>
           <p className="mt-1.5 text-sm leading-relaxed" style={{ color: "#a08a60", fontFamily: "'IM Fell English', serif" }}>
@@ -356,22 +349,9 @@ function ScrollEntry({ date, title, excerpt }: (typeof POSTS)[0]) {
    MAIN APP
 ───────────────────────────────────────────── */
 export default function App() {
-  const [activeSection, setActiveSection] = useState("chronicle");
-  const sectionRefs = useRef<Record<string, HTMLElement | null>>({});
   const [guestName, setGuestName] = useState("");
   const [guestMsg, setGuestMsg] = useState("");
   const [submitted, setSubmitted] = useState(false);
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((e) => { if (e.isIntersecting) setActiveSection(e.target.id); });
-      },
-      { threshold: 0.3 }
-    );
-    Object.values(sectionRefs.current).forEach((el) => el && observer.observe(el));
-    return () => observer.disconnect();
-  }, []);
 
   const navItems = [
     { id: "chronicle", label: "Chronicle", rune: "📜" },
@@ -487,30 +467,6 @@ export default function App() {
                 </p>
               </div>
 
-              {/* Nav */}
-              <nav className="space-y-1 mb-8">
-                {navItems.map(({ id, label, rune }) => (
-                  <a
-                    key={id}
-                    href={`#${id}`}
-                    className="flex items-center gap-2.5 px-3 py-2 transition-all duration-150"
-                    style={{
-                      color: activeSection === id ? "#c9a227" : "#8a7a5a",
-                      background: activeSection === id ? "rgba(201,162,39,0.08)" : "transparent",
-                      border: `1px solid ${activeSection === id ? "rgba(201,162,39,0.25)" : "transparent"}`,
-                      textDecoration: "none",
-                      fontFamily: "'Cinzel', serif",
-                      fontSize: "0.78rem",
-                      letterSpacing: "0.12em",
-                      textTransform: "uppercase",
-                    }}
-                  >
-                    <span style={{ fontSize: "0.9rem" }}>{rune}</span>
-                    {label}
-                  </a>
-                ))}
-              </nav>
-
               {/* Realm info */}
               <div
                 className="p-4 mb-4"
@@ -542,7 +498,8 @@ export default function App() {
                 {[
                   { label: "Parish", value: "The Joy Of All Who Sorrow" },
                   { label: "Patron Saint", value: "St. Nicholas The Wonderworker" },
-                  { label: "Book", value: "The Path To Salvation - St Theophian The Recluse" },
+                  { label: "Book", value: "The Path To Salvation" },
+                  { label: "Author", value: "St Theophian The Recluse" },
                   { label: "Feast", value: "Nativity of Our Lord Jesus Christ" },
                 ].map(({ label, value }) => (
                   <div key={label} className="flex justify-between items-baseline mb-1">
@@ -579,11 +536,7 @@ export default function App() {
           <main className="flex-1 min-w-0 space-y-20">
 
             {/* CHRONICLE (About) */}
-            <section
-              id="chronicle"
-              ref={(el) => { sectionRefs.current["chronicle"] = el; }}
-              className="fade-in"
-            >
+            <section id="chronicle" className="fade-in">
               <SectionHeading rune="📜">The Chronicle</SectionHeading>
 
               <div
@@ -638,16 +591,13 @@ export default function App() {
             </section>
 
             {/* ARMORY (Projects) */}
-            <section
-              id="armory"
-              ref={(el) => { sectionRefs.current["armory"] = el; }}
-            >
+            <section id="armory">
               <SectionHeading rune="⚔️">Projects</SectionHeading>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-4">
                 {PROJECTS.map((p) => <ProjectCard key={p.name} {...p} />)}
               </div>
               <a
-                href="#"
+                href="https://github.com/AlexNicholasWang"
                 style={{
                   fontFamily: "'Cinzel', serif",
                   fontSize: "0.72rem",
@@ -664,37 +614,15 @@ export default function App() {
             </section>
 
             {/* SCRIPTORIUM (Blog) */}
-            <section
-              id="scriptorium"
-              ref={(el) => { sectionRefs.current["scriptorium"] = el; }}
-            >
+            <section id="scriptorium">
               <SectionHeading rune="🪶">Blog</SectionHeading>
               <div>
                 {POSTS.map((p) => <ScrollEntry key={p.title} {...p} />)}
               </div>
-              <a
-                href="#"
-                className="mt-4 inline-block"
-                style={{
-                  fontFamily: "'Cinzel', serif",
-                  fontSize: "0.72rem",
-                  color: "#8a7a5a",
-                  letterSpacing: "0.15em",
-                  textTransform: "uppercase",
-                  textDecoration: "none",
-                }}
-                onMouseEnter={(e) => (e.currentTarget.style.color = "#c9a227")}
-                onMouseLeave={(e) => (e.currentTarget.style.color = "#8a7a5a")}
-              >
-                ⟶ All Scrolls via RSS
-              </a>
             </section>
 
             {/* TAVERN (Links + Guestbook) */}
-            <section
-              id="tavern"
-              ref={(el) => { sectionRefs.current["tavern"] = el; }}
-            >
+            <section id="tavern">
               <SectionHeading rune="🍺">The Tavern</SectionHeading>
 
               {/* Links */}
