@@ -554,7 +554,7 @@ export default function App() {
 
                 <div className="space-y-4" style={{ fontFamily: "'IM Fell English', serif", fontSize: "1.02rem", lineHeight: 1.9, color: "#a08a60" }}>
                   <p>
-                    Hello Visitor!, My name is Alexander Wang and I'm currently a sophomore @ UCLA studying Applied Mathematics with a computing specialization. I from Bear, Delaware and am an alumnus of Salesianum, Caravel Academy, and Wilbur Elementary.
+                    Hello Visitor!, My name is Alexander Wang and I'm currently a sophomore @ UCLA studying Applied Mathematics with a computing specialization. I'm from Bear, Delaware and am an alumnus of Salesianum, Caravel Academy, and Wilbur Elementary.
                   </p>
                   <p>
                    I'm currently interested in machine learning, especially imaging & deep learning, and software development in general as I love building cool projects. 
