@@ -104,14 +104,14 @@ const STYLES = `
 const PROJECTS = [
   {
     name: "PetaLux",
-    desc: "A mechanical-blooming flower lamp that destroys darkness. Written in Swift, zero config.",
+    desc: "A mechanical-blooming flower lamp that destroys darkness.",
     rune: "⚔️",
     lang: "Swift",
     langColor: "#ce422b",
   },
   {
     name: "Cosmas",
-    desc: "An AI Benefits Eligibility Agent that fights on your behalf to get you the perks you deserve. Built with TypeScript and React.",
+    desc: "An AI Benefits Eligibility Agent that fights on your behalf to get you the perks you deserve.",
     rune: "📜",
     lang: "TypeScript",
     langColor: "#3178c6",
