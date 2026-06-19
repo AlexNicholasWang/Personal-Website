@@ -609,7 +609,7 @@ export default function App() {
                 onMouseEnter={(e) => (e.currentTarget.style.color = "#c9a227")}
                 onMouseLeave={(e) => (e.currentTarget.style.color = "#8a7a5a")}
               >
-                ⟶ View all projects on GitHub
+                ⟶ View all projects 
               </a>
             </section>
 
