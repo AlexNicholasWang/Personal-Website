@@ -497,9 +497,8 @@ export default function App() {
                 </p>
                 {[
                   { label: "Parish", value: "The Joy Of All Who Sorrow" },
-                  { label: "Patron Saint", value: "St. Nicholas The Wonderworker" },
+                  { label: "Patron Saint", value: "St. Nicholas" },
                   { label: "Book", value: "The Path To Salvation" },
-                  { label: "Author", value: "St Theophian The Recluse" },
                   { label: "Feast", value: "Nativity of Our Lord Jesus Christ" },
                 ].map(({ label, value }) => (
                   <div key={label} className="flex justify-between items-baseline mb-1">
