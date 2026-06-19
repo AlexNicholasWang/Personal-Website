@@ -555,14 +555,13 @@ export default function App() {
 
                 <div className="space-y-4" style={{ fontFamily: "'IM Fell English', serif", fontSize: "1.02rem", lineHeight: 1.9, color: "#a08a60" }}>
                   <p>
-                    Hark, traveller. I am a <span style={{ color: "#c9a227" }}>craftsperson of software, </span> a soccer player, guitar player, and bungee jumping addict.
+                    Hello Visitor!, My name is Alexander Wang and I'm currently a sophomore @ UCLA studying Applied Mathematics with a computing specialization. I from Bear, Delaware and am an alumnus of Salesianum, Caravel Academy, and Wilbur Elementary.
                   </p>
                   <p>
-                    My apprenticeship began in the age of dial-up, when websites were built by hand and hosted on servers you actually owned. That spirit never left me. I write code for{" "}
-                    <span style={{ color: "#8b1a1a", fontStyle: "italic" }}>the joy of building</span>, not for growth metrics.
+                   I'm currently interested in machine learning, especially imaging & deep learning, and software development in general as I love building cool projects. 
                   </p>
                   <p>
-                    When not at the Terminal, I tend to philosophy, long walks in questionable weather, and a mix of skating and surfing in Venice Beach.
+                    For fun I like to read philosophy and gothic literature, take long walks on the beachs of LA, as well as going skating and surfing in Venice Beach.
                   </p>
                 </div>
               </div>
