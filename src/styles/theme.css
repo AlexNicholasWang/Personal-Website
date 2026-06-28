@@ -1,39 +1,39 @@
 @custom-variant dark (&:is(.dark *));
 
 :root {
-  --font-size: 15px;
-  --background: #0e0b06;
-  --foreground: #e8d5a3;
-  --card: #191208;
-  --card-foreground: #e8d5a3;
-  --popover: #191208;
-  --popover-foreground: #e8d5a3;
-  --primary: #c9a227;
-  --primary-foreground: #0e0b06;
-  --secondary: #241a09;
-  --secondary-foreground: #e8d5a3;
-  --muted: #1e160a;
-  --muted-foreground: #8a7a5a;
-  --accent: #8b1a1a;
-  --accent-foreground: #e8d5a3;
-  --destructive: #c0392b;
+  --font-size: 16px;
+  --background: #ffffff;
+  --foreground: #111827;
+  --card: #f3f4f6;
+  --card-foreground: #111827;
+  --popover: #ffffff;
+  --popover-foreground: #111827;
+  --primary: #111827;
+  --primary-foreground: #ffffff;
+  --secondary: #f3f4f6;
+  --secondary-foreground: #111827;
+  --muted: #e5e7eb;
+  --muted-foreground: #6b7280;
+  --accent: #3b82f6;
+  --accent-foreground: #ffffff;
+  --destructive: #ef4444;
   --destructive-foreground: #ffffff;
-  --border: rgba(201, 162, 39, 0.18);
-  --input: transparent;
-  --input-background: #241a09;
-  --switch-background: #3a2a10;
+  --border: #e5e7eb;
+  --input: #ffffff;
+  --input-background: #f9fafb;
+  --switch-background: #e5e7eb;
   --font-weight-medium: 500;
   --font-weight-normal: 400;
-  --ring: #c9a227;
+  --ring: #3b82f6;
   --chart-1: oklch(0.646 0.222 41.116);
   --chart-2: oklch(0.6 0.118 184.704);
   --chart-3: oklch(0.398 0.07 227.392);
   --chart-4: oklch(0.828 0.189 84.429);
   --chart-5: oklch(0.769 0.188 70.08);
-  --radius: 0.625rem;
+  --radius: 0.5rem;
   --sidebar: oklch(0.985 0 0);
   --sidebar-foreground: oklch(0.145 0 0);
-  --sidebar-primary: #030213;
+  --sidebar-primary: #3b82f6;
   --sidebar-primary-foreground: oklch(0.985 0 0);
   --sidebar-accent: oklch(0.97 0 0);
   --sidebar-accent-foreground: oklch(0.205 0 0);
@@ -42,25 +42,25 @@
 }
 
 .dark {
-  --background: #0e0b06;
-  --foreground: oklch(0.985 0 0);
-  --card: oklch(0.145 0 0);
-  --card-foreground: oklch(0.985 0 0);
-  --popover: oklch(0.145 0 0);
-  --popover-foreground: oklch(0.985 0 0);
-  --primary: oklch(0.985 0 0);
-  --primary-foreground: oklch(0.205 0 0);
-  --secondary: oklch(0.269 0 0);
-  --secondary-foreground: oklch(0.985 0 0);
-  --muted: oklch(0.269 0 0);
-  --muted-foreground: oklch(0.708 0 0);
-  --accent: oklch(0.269 0 0);
-  --accent-foreground: oklch(0.985 0 0);
-  --destructive: oklch(0.396 0.141 25.723);
-  --destructive-foreground: oklch(0.637 0.237 25.331);
-  --border: oklch(0.269 0 0);
-  --input: oklch(0.269 0 0);
-  --ring: oklch(0.439 0 0);
+  --background: #030712;
+  --foreground: #f9fafb;
+  --card: #111827;
+  --card-foreground: #f9fafb;
+  --popover: #111827;
+  --popover-foreground: #f9fafb;
+  --primary: #f9fafb;
+  --primary-foreground: #030712;
+  --secondary: #1f2937;
+  --secondary-foreground: #f9fafb;
+  --muted: #374151;
+  --muted-foreground: #9ca3af;
+  --accent: #60a5fa;
+  --accent-foreground: #030712;
+  --destructive: #f87171;
+  --destructive-foreground: #030712;
+  --border: #1f2937;
+  --input: #111827;
+  --ring: #60a5fa;
   --font-weight-medium: 500;
   --font-weight-normal: 400;
   --chart-1: oklch(0.488 0.243 264.376);
@@ -127,11 +127,6 @@
   body {
     @apply bg-background text-foreground;
   }
-
-  /**
-  * Default typography styles for HTML elements (h1-h4, p, label, button, input).
-  * These are in @layer base, so Tailwind utility classes (like text-sm, text-lg) automatically override them.
-  */
 
   html {
     font-size: var(--font-size);
