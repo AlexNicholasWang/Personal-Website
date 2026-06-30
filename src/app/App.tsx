@@ -6,6 +6,8 @@ const PORTFOLIO_DATA = {
     links: [
       { label: "Projects", href: "#projects" },
       { label: "Experience", href: "#experience" },
+      { label: "Skills", href: "#skills" },
+      { label: "Education", href: "#education" },
       { label: "Contact Me", href: "#contact", featured: true }
     ]
   },
@@ -89,6 +91,23 @@ const PORTFOLIO_DATA = {
         date: "2024 – Present",
         location: "Los Angeles, CA",
         description: "Building personal projects and contributing to open-source. Creating elegant solutions to complex problems."
+      }
+    ]
+  },
+  skillsSection: {
+    label: "Expertise",
+    title: "Skills",
+    items: ["TypeScript", "JavaScript", "Python", "Go", "Swift", "React", "Vite", "Tailwind CSS", "Next.js", "Node.js", "Express", "FastAPI", "PostgreSQL", "Firebase", "Git", "Docker", "AWS", "Vercel"]
+  },
+  education: {
+    label: "Achievements",
+    title: "Education & Awards",
+    items: [
+      {
+        title: "BS Computer Science",
+        organization: "University of California, Los Angeles (UCLA)",
+        date: "Expected 2025",
+        description: "Focus on full-stack development and AI systems"
       }
     ]
   },
@@ -468,6 +487,70 @@ export default function App() {
                 </p>
                 <p className="text-gray-300 text-sm leading-relaxed">
                   {exp.description}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Skills Section */}
+      <section id="skills" className="py-24 px-6 sm:px-12 bg-gradient-to-b from-black to-blue-950/10">
+        <div className="max-w-6xl mx-auto">
+          <div className="mb-16 animate-fade-in-up">
+            <p className="text-xs uppercase tracking-widest text-gray-500 mb-3 font-semibold animate-slide-in-left">
+              {PORTFOLIO_DATA.skillsSection.label}
+            </p>
+            <h2 className="text-4xl sm:text-5xl font-bold text-white font-serif gradient-text animate-fade-in-up" style={{animationDelay: '0.1s'}}>
+              {PORTFOLIO_DATA.skillsSection.title}
+            </h2>
+          </div>
+
+          <div className="flex flex-wrap gap-3 animate-fade-in-up" style={{animationDelay: '0.2s'}}>
+            {PORTFOLIO_DATA.skillsSection.items.map((skill) => (
+              <span 
+                key={skill}
+                className="px-4 py-2 bg-blue-500/10 text-blue-300 rounded border border-blue-500/30 hover:border-blue-400 hover:bg-blue-500/20 transition-all duration-300 text-sm hover-glow"
+              >
+                {skill}
+              </span>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Education & Awards Section */}
+      <section id="education" className="py-24 px-6 sm:px-12 bg-black/50">
+        <div className="max-w-6xl mx-auto">
+          <div className="mb-16 animate-fade-in-up">
+            <p className="text-xs uppercase tracking-widest text-gray-500 mb-3 font-semibold animate-slide-in-left">
+              {PORTFOLIO_DATA.education.label}
+            </p>
+            <h2 className="text-4xl sm:text-5xl font-bold text-white font-serif gradient-text animate-fade-in-up" style={{animationDelay: '0.1s'}}>
+              {PORTFOLIO_DATA.education.title}
+            </h2>
+          </div>
+
+          <div className="space-y-8">
+            {PORTFOLIO_DATA.education.items.map((item, idx) => (
+              <div 
+                key={idx}
+                className="border border-gray-700/50 rounded-lg p-8 hover:border-blue-500/50 transition-all duration-300 bg-gray-900/30 backdrop-blur-sm hover-glow animate-fade-in-up"
+                style={{animationDelay: `${0.2 + idx * 0.1}s`}}
+              >
+                <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-2 mb-2">
+                  <h3 className="text-2xl font-bold text-white font-serif gradient-text">
+                    {item.title}
+                  </h3>
+                  <span className="text-sm text-gray-400 font-mono">
+                    {item.date}
+                  </span>
+                </div>
+                <p className="text-blue-400 font-semibold mb-3">
+                  {item.organization}
+                </p>
+                <p className="text-gray-300 text-sm leading-relaxed">
+                  {item.description}
                 </p>
               </div>
             ))}
