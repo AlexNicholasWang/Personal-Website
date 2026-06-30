@@ -26,7 +26,7 @@ const PORTFOLIO_DATA = {
   },
   skills: {
     label: "Toolkit",
-    title: "Core Competencies",
+    title: "Skills",
     items: [
       "React",
       "TypeScript",
