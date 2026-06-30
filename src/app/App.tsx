@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import profilePhoto from "../../public/profile.jpg";
 
 const PORTFOLIO_DATA = {
   nav: {
@@ -12,7 +13,7 @@ const PORTFOLIO_DATA = {
   hero: {
     tag: "Software Developer",
     initials: "AW",
-    photo: null,
+    photo: profilePhoto,
     firstName: "Alexander",
     lastName: "Wang",
     title: "Software Developer",
@@ -257,9 +258,7 @@ export default function App() {
         style={{opacity: loaded ? 1 : 0, transform: loaded ? 'translateY(0)' : 'translateY(-20px)', transition: 'all 0.6s ease-out 0.1s'}}
       >
         <div className="max-w-6xl mx-auto px-6 sm:px-12 py-6 flex items-center justify-between">
-          <a href="#" className="text-lg font-bold text-white hover:text-blue-400 transition-all duration-300 transform hover:scale-110">
-            {PORTFOLIO_DATA.nav.logo}
-          </a>
+          <div className="w-8"></div>
           <div className="flex gap-8 items-center text-sm">
             {PORTFOLIO_DATA.nav.links.map((link, idx) => (
               link.featured ? (
@@ -299,12 +298,14 @@ export default function App() {
 
         {/* Profile Photo */}
         <div className="mb-12 animate-scale-in" style={{animationDelay: loaded ? '0.4s' : '0s'}}>
-          <div className="w-32 h-32 sm:w-40 sm:h-40 rounded-full border-2 border-blue-500/50 bg-gradient-to-br from-blue-600/20 to-blue-900/20 flex items-center justify-center glow-blue hover-glow transform transition-all duration-300 hover:border-blue-400"
+          <div className="w-32 h-32 sm:w-40 sm:h-40 rounded-full border-2 border-blue-500/50 glow-blue hover-glow overflow-hidden flex items-center justify-center bg-gray-900 transform transition-all duration-300 hover:border-blue-400"
             style={{opacity: loaded ? 1 : 0, transform: loaded ? 'scale(1)' : 'scale(0.8)', transition: 'all 0.6s ease-out 0.4s'}}
           >
-            <span className="text-5xl sm:text-6xl font-bold bg-gradient-to-br from-blue-400 to-blue-200 bg-clip-text text-transparent">
-              {PORTFOLIO_DATA.hero.initials}
-            </span>
+            <img 
+              src={PORTFOLIO_DATA.hero.photo}
+              alt="Alexander Wang"
+              className="w-full h-full object-cover"
+            />
           </div>
         </div>
 
