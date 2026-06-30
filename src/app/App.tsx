@@ -12,7 +12,7 @@ const PORTFOLIO_DATA = {
   hero: {
     tag: "Software Developer",
     initials: "AW",
-    photo: "/profile.jpg",
+    photo: "https://drive.google.com/uc?export=view&id=1BwtarAhLOaMb48Kaien2wPEN1e24c1TC",
     firstName: "Alexander",
     lastName: "Wang",
     title: "Software Developer",
