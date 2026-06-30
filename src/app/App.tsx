@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-import profilePhoto from "../../public/profile.jpg";
 
 const PORTFOLIO_DATA = {
   nav: {
@@ -13,7 +12,7 @@ const PORTFOLIO_DATA = {
   hero: {
     tag: "Software Developer",
     initials: "AW",
-    photo: profilePhoto,
+    photo: "/profile.jpg",
     firstName: "Alexander",
     lastName: "Wang",
     title: "Software Developer",
@@ -305,6 +304,7 @@ export default function App() {
               src={PORTFOLIO_DATA.hero.photo}
               alt="Alexander Wang"
               className="w-full h-full object-cover"
+              loading="eager"
             />
           </div>
         </div>
