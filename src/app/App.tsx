@@ -12,16 +12,16 @@ const PORTFOLIO_DATA = {
     ]
   },
   hero: {
-    tag: "Software Developer",
+    tag: "Software Developer & Researcher",
     initials: "AW",
     firstName: "Alexander",
     lastName: "Wang",
-    title: "Software Developer",
-    bio: "UCLA student building full-stack web applications and exploring AI-powered systems. Passionate about clean code, user experience, and creative projects.",
+    title: "Software Developer & Researcher",
+    bio: "UCLA Mathematics of Computation student exploring AI systems, quantitative finance, and full-stack development. Focused on building elegant solutions and advancing ML research.",
     socialLinks: [
       { label: "GitHub", href: "https://github.com/AlexNicholasWang", icon: "github" },
       { label: "LinkedIn", href: "https://www.linkedin.com/in/alexwang67/", icon: "linkedin" },
-      { label: "Email", href: "mailto:alexwang770@g.ucla.edu", icon: "email" }
+      { label: "Email", href: "mailto:alexwang770@ucla.edu", icon: "email" }
     ],
     scrollText: "scroll"
   },
@@ -86,28 +86,56 @@ const PORTFOLIO_DATA = {
     title: "Experience",
     items: [
       {
+        company: "Manispace Capital",
+        role: "Quantitative Analyst",
+        date: "Jul 2026 – Sep 2026",
+        location: "New York City, NY",
+        description: "Generated signals from options data and constructed volatility indices for Shanghai Stock Exchange trading strategies."
+      },
+      {
+        company: "Speeder Solutions LLC",
+        role: "Software Engineer Intern",
+        date: "Jun 2025 – Aug 2025",
+        location: "New Castle, DE",
+        description: "Designed async batch inference pipeline and implemented quantization optimizations for model deployment."
+      },
+      {
+        company: "UCLA, BruinML Group",
+        role: "Undergraduate Researcher",
+        date: "May 2026 – Present",
+        location: "Los Angeles, CA",
+        description: "Researching emergent intelligence in pretrained models and ontology-based LLM fine-tuning frameworks."
+      },
+      {
+        company: "University of Delaware (GEMS REU)",
+        role: "Visiting Researcher",
+        date: "Jun 2026 – Aug 2026",
+        location: "Newark, DE",
+        description: "Investigated spectral properties and mixing time bounds for random walks on complex graph structures."
+      },
+      {
         company: "Self-Employed",
         role: "Full Stack Developer",
         date: "2024 – Present",
         location: "Los Angeles, CA",
-        description: "Building personal projects and contributing to open-source. Creating elegant solutions to complex problems."
+        description: "Building personal projects and open-source contributions with modern web technologies."
       }
     ]
   },
   skillsSection: {
     label: "Expertise",
     title: "Skills",
-    items: ["TypeScript", "JavaScript", "Python", "Go", "Swift", "React", "Vite", "Tailwind CSS", "Next.js", "Node.js", "Express", "FastAPI", "PostgreSQL", "Firebase", "Git", "Docker", "AWS", "Vercel"]
+    items: ["Python", "TypeScript", "JavaScript", "Java", "C/C++", "Swift", "React", "Next.js", "SQL", "HTML/CSS", "Git", "Linux", "Data Structures & Algorithms", "Machine Learning", "FastAPI", "PostgreSQL"]
   },
   education: {
     label: "Achievements",
     title: "Education & Awards",
     items: [
       {
-        title: "BS Computer Science",
+        title: "B.S. in Mathematics of Computation",
         organization: "University of California, Los Angeles (UCLA)",
-        date: "Expected 2025",
-        description: "Focus on full-stack development and AI systems"
+        date: "Expected Jun 2028",
+        description: "GPA: 3.8/4.0"
       }
     ]
   },
