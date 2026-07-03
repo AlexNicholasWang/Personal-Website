@@ -113,13 +113,6 @@ const PORTFOLIO_DATA = {
         location: "Newark, DE",
         description: "Investigated spectral properties and mixing time bounds for random walks on complex graph structures."
       },
-      {
-        company: "Self-Employed",
-        role: "Full Stack Developer",
-        date: "2024 – Present",
-        location: "Los Angeles, CA",
-        description: "Building personal projects and open-source contributions with modern web technologies."
-      }
     ]
   },
   skillsSection: {
