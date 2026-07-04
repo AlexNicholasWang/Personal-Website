@@ -12,12 +12,12 @@ const PORTFOLIO_DATA = {
     ]
   },
   hero: {
-    tag: "Software Developer & Researcher",
+    tag: "Software Developer",
     initials: "AW",
     firstName: "Alexander",
     lastName: "Wang",
-    title: "I know that I am intelligent, because I know that I know nothing - Socrates",
-    bio: "2nd year undergraduate interested in AI, quantitative finance, and software development.",
+    title: "UCLA Mathematics & Computer Science",
+    bio: "2nd year undergraduate interested in AI & Quantitatve Finance",
     socialLinks: [
       { label: "GitHub", href: "https://github.com/AlexNicholasWang", icon: "github" },
       { label: "LinkedIn", href: "https://www.linkedin.com/in/alexwang67/", icon: "linkedin" },
@@ -144,7 +144,7 @@ const PORTFOLIO_DATA = {
   },
 
   achievements: {
-    title: "Awards & Achievements",
+    title: "Achievements",
     items: [
       {
         title: "IMC Prosperity 4 Finalist",
@@ -167,7 +167,7 @@ const PORTFOLIO_DATA = {
 
   contact: {
     label: "Contact",
-    subtitle: "Feel free to reach out. Always open to interesting conversations and opportunities.",
+    subtitle: "Feel free to reach out. Always open to new opportunities.",
     links: [
       { label: "Email Me", href: "mailto:alexwang770@g.ucla.edu", icon: "email", primary: true },
       { label: "LinkedIn", href: "https://www.linkedin.com/in/alexwang67/", icon: "linkedin" },
