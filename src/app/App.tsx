@@ -23,7 +23,7 @@ const PORTFOLIO_DATA = {
       { label: "LinkedIn", href: "https://www.linkedin.com/in/alexwang67/", icon: "linkedin" },
       { label: "Email", href: "mailto:alexwang770@ucla.edu", icon: "email" }
     ],
-    scrollText: "scroll"
+  
   },
   skills: {
     label: "Toolkit",
@@ -44,7 +44,6 @@ const PORTFOLIO_DATA = {
     ]
   },
   projects: {
-    label: "Work",
     title: "Featured Projects",
     items: [
       {
@@ -66,7 +65,7 @@ const PORTFOLIO_DATA = {
       {
         title: "Ton-619",
         description: "Black Hole Simulator that visualizes the event horizon and gravitational lensing. Built with physics-based rendering and interactive controls.",
-        tags: ["Go", "Cloud Storage", "Security"],
+        tags: ["Python", "Physics", "Simulation"],
         links: [
           { label: "GitHub", href: "https://github.com/AlexNicholasWang", icon: "github" }
         ]
@@ -74,7 +73,7 @@ const PORTFOLIO_DATA = {
       {
         title: "GaussLab",
         description: "RREF Calculator and Linear Algebra Toolkit for solving systems of equations. Built with Python and CLI interface.",
-        tags: ["Python", "CLI", "LLM"],
+        tags: ["Python", "Mathematics", "CLI"],
         links: [
           { label: "GitHub", href: "https://github.com/AlexNicholasWang", icon: "github" }
         ]
@@ -82,8 +81,7 @@ const PORTFOLIO_DATA = {
     ]
   },
   experience: {
-    label: "History",
-    title: "Experience",
+    title: "Work Experience",
     items: [
       {
         company: "Manispace Capital",
@@ -100,11 +98,11 @@ const PORTFOLIO_DATA = {
         description: "Petrarch (YC S26)"
       },
       {
-        company: "Speeder Solutions LLC",
-        role: "Software Engineer Intern",
-        date: "Jun 2025 – Aug 2025",
-        location: "New Castle, DE",
-        description: "AI Photo Processing & Apparel Production"
+        company: "University of Delaware (GEMS REU)",
+        role: "Student Researcher",
+        date: "Jun 2026 – Aug 2026",
+        location: "Newark, DE",
+        description: "Markov Chains & Random Walks"
       },
       {
         company: "BruinML Group",
@@ -113,13 +111,12 @@ const PORTFOLIO_DATA = {
         location: "Los Angeles, CA",
       },
       {
-        company: "University of Delaware (GEMS REU)",
-        role: "Student Researcher",
-        date: "Jun 2026 – Aug 2026",
-        location: "Newark, DE",
-        description: "Markov Chains & Random Walks"
+        company: "Speeder Solutions LLC",
+        role: "Software Engineer Intern",
+        date: "Jun 2025 – Aug 2025",
+        location: "New Castle, DE",
+        description: "AI Photo Processing & Apparel Production"
       },
-
       {
         company: "Johns Hopkins University",
         role: "Biomedical Research Intern",
@@ -127,8 +124,6 @@ const PORTFOLIO_DATA = {
         location: "Baltimore, MD",
         description: "Peptides & Anti-cancer Drug Devlopment"
       },
-
-
     ]
   },
   skillsSection: {
@@ -138,7 +133,7 @@ const PORTFOLIO_DATA = {
   },
  education: {
     label: "Achievements",
-    title: "Education & Awards",
+    title: "Awards",
     items: [
       {
         title: "IMC Prosperity 4 Finalist",
