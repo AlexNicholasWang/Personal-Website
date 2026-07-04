@@ -23,7 +23,6 @@ const PORTFOLIO_DATA = {
       { label: "LinkedIn", href: "https://www.linkedin.com/in/alexwang67/", icon: "linkedin" },
       { label: "Email", href: "mailto:alexwang770@ucla.edu", icon: "email" }
     ],
-  
   },
   skills: {
     label: "Toolkit",
@@ -131,9 +130,21 @@ const PORTFOLIO_DATA = {
     title: "Skills",
     items: ["Python", "TypeScript", "JavaScript", "Java", "C/C++", "Swift", "React", "Next.js", "SQL", "HTML/CSS", "Git", "Linux", "Data Structures & Algorithms", "Machine Learning", "FastAPI", "PostgreSQL"]
   },
- 
+
+  education: {
+    title: "Education",
+    items: [
+      {
+        title: "University of California, Los Angeles",
+        date: "Expected 2028",
+        organization: "B.S. in Mathematics & Computer Science",
+        description: "GPA: 3.8/4.0",
+      }
+    ]
+  },
+
   achievements: {
-    title: "Achievements",
+    title: "Awards & Achievements",
     items: [
       {
         title: "IMC Prosperity 4 Finalist",
@@ -151,18 +162,6 @@ const PORTFOLIO_DATA = {
         title: "November 14 Award",
         organization: "Salesianum School",
       },
-    ]
-  },
-
-  education: {
-    title: "Education",
-    items: [
-      {
-        title: "University of California, Los Angeles",
-        date: "Expected 2028",
-        organization: "B.S. in Mathematics & Computer Science",
-        GPA: "3.8/4.0",
-      }
     ]
   },
 
@@ -220,7 +219,7 @@ export default function App() {
   return (
     <div className="min-h-screen bg-black text-white overflow-hidden">
       <style>{`
-        @import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:wght@400;500&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=DM+Mono:wght@400;500&display=swap');
         
         * {
           scrollbar-width: thin;
@@ -246,7 +245,7 @@ export default function App() {
         }
 
         h1, h2, h3, h4, h5, h6 {
-          font-family: 'Syne', sans-serif;
+          font-family: 'Inter', sans-serif;
           letter-spacing: -0.5px;
         }
 
@@ -396,7 +395,7 @@ export default function App() {
         </div>
 
         {/* Name */}
-        <h1 className="text-6xl sm:text-7xl md:text-8xl font-bold text-center mb-4 leading-tight font-serif animate-fade-in-up"
+        <h1 className="text-6xl sm:text-7xl md:text-8xl font-bold text-center mb-4 leading-tight animate-fade-in-up"
           style={{animationDelay: loaded ? '0.5s' : '0s'}}
         >
           {PORTFOLIO_DATA.hero.firstName}{" "}
@@ -446,7 +445,7 @@ export default function App() {
         <div className="absolute bottom-8 text-gray-500 text-xs uppercase tracking-widest animate-pulse-slow"
           style={{opacity: loaded ? 1 : 0, transition: 'opacity 0.8s ease-out 1s'}}
         >
-          {PORTFOLIO_DATA.hero.scrollText}
+          scroll
         </div>
       </section>
 
@@ -454,10 +453,7 @@ export default function App() {
       <section id="projects" className="py-24 px-6 sm:px-12 bg-gradient-to-b from-black to-blue-950/10">
         <div className="max-w-6xl mx-auto">
           <div className="mb-16 animate-fade-in-up">
-            <p className="text-xs uppercase tracking-widest text-gray-500 mb-3 font-semibold animate-slide-in-left">
-              {PORTFOLIO_DATA.projects.label}
-            </p>
-            <h2 className="text-4xl sm:text-5xl font-bold text-white font-serif gradient-text animate-fade-in-up" style={{animationDelay: '0.1s'}}>
+            <h2 className="text-4xl sm:text-5xl font-bold text-white gradient-text animate-fade-in-up" style={{animationDelay: '0.1s'}}>
               {PORTFOLIO_DATA.projects.title}
             </h2>
           </div>
@@ -469,7 +465,7 @@ export default function App() {
                 className="border border-gray-700/50 rounded-lg p-8 hover:border-blue-500/50 transition-all duration-300 bg-gray-900/30 backdrop-blur-sm hover-glow transform hover:scale-105 hover:-translate-y-2 animate-fade-in-up"
                 style={{animationDelay: `${0.2 + idx * 0.1}s`}}
               >
-                <h3 className="text-2xl font-bold text-white mb-3 font-serif gradient-text">
+                <h3 className="text-2xl font-bold text-white mb-3 gradient-text">
                   {project.title}
                 </h3>
                 <p className="text-gray-300 text-sm leading-relaxed mb-5">
@@ -511,11 +507,8 @@ export default function App() {
       <section id="experience" className="py-24 px-6 sm:px-12 bg-black/50">
         <div className="max-w-6xl mx-auto">
           <div className="mb-16 animate-fade-in-up">
-            <p className="text-xs uppercase tracking-widest text-gray-500 mb-3 font-semibold animate-slide-in-left">
-              {PORTFOLIO_DATA.experience.label}
-            </p>
-            <h2 className="text-4xl sm:text-5xl font-bold text-white font-serif gradient-text animate-fade-in-up" style={{animationDelay: '0.1s'}}>
-              Experience
+            <h2 className="text-4xl sm:text-5xl font-bold text-white gradient-text animate-fade-in-up" style={{animationDelay: '0.1s'}}>
+              {PORTFOLIO_DATA.experience.title}
             </h2>
           </div>
 
@@ -527,7 +520,7 @@ export default function App() {
                 style={{animationDelay: `${0.2 + idx * 0.1}s`}}
               >
                 <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-2 mb-2">
-                  <h3 className="text-2xl font-bold text-white font-serif gradient-text">
+                  <h3 className="text-2xl font-bold text-white gradient-text">
                     {exp.role}
                   </h3>
                   <span className="text-sm text-gray-400 font-mono">
@@ -540,9 +533,11 @@ export default function App() {
                 <p className="text-gray-500 text-sm mb-3">
                   {exp.location}
                 </p>
-                <p className="text-gray-300 text-sm leading-relaxed">
-                  {exp.description}
-                </p>
+                {exp.description && (
+                  <p className="text-gray-300 text-sm leading-relaxed">
+                    {exp.description}
+                  </p>
+                )}
               </div>
             ))}
           </div>
@@ -553,10 +548,7 @@ export default function App() {
       <section id="skills" className="py-24 px-6 sm:px-12 bg-gradient-to-b from-black to-blue-950/10">
         <div className="max-w-6xl mx-auto">
           <div className="mb-16 animate-fade-in-up">
-            <p className="text-xs uppercase tracking-widest text-gray-500 mb-3 font-semibold animate-slide-in-left">
-              {PORTFOLIO_DATA.skillsSection.label}
-            </p>
-            <h2 className="text-4xl sm:text-5xl font-bold text-white font-serif gradient-text animate-fade-in-up" style={{animationDelay: '0.1s'}}>
+            <h2 className="text-4xl sm:text-5xl font-bold text-white gradient-text animate-fade-in-up" style={{animationDelay: '0.1s'}}>
               {PORTFOLIO_DATA.skillsSection.title}
             </h2>
           </div>
@@ -574,14 +566,11 @@ export default function App() {
         </div>
       </section>
 
-      {/* Education & Awards Section */}
+      {/* Education Section */}
       <section id="education" className="py-24 px-6 sm:px-12 bg-black/50">
         <div className="max-w-6xl mx-auto">
           <div className="mb-16 animate-fade-in-up">
-            <p className="text-xs uppercase tracking-widest text-gray-500 mb-3 font-semibold animate-slide-in-left">
-              {PORTFOLIO_DATA.education.label}
-            </p>
-            <h2 className="text-4xl sm:text-5xl font-bold text-white font-serif gradient-text animate-fade-in-up" style={{animationDelay: '0.1s'}}>
+            <h2 className="text-4xl sm:text-5xl font-bold text-white gradient-text animate-fade-in-up" style={{animationDelay: '0.1s'}}>
               {PORTFOLIO_DATA.education.title}
             </h2>
           </div>
@@ -594,7 +583,7 @@ export default function App() {
                 style={{animationDelay: `${0.2 + idx * 0.1}s`}}
               >
                 <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-2 mb-2">
-                  <h3 className="text-2xl font-bold text-white font-serif gradient-text">
+                  <h3 className="text-2xl font-bold text-white gradient-text">
                     {item.title}
                   </h3>
                   <span className="text-sm text-gray-400 font-mono">
@@ -604,8 +593,38 @@ export default function App() {
                 <p className="text-blue-400 font-semibold mb-3">
                   {item.organization}
                 </p>
-                <p className="text-gray-300 text-sm leading-relaxed">
-                  {item.description}
+                {item.description && (
+                  <p className="text-gray-300 text-sm leading-relaxed">
+                    {item.description}
+                  </p>
+                )}
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Achievements Section */}
+      <section className="py-24 px-6 sm:px-12 bg-gradient-to-b from-black to-blue-950/10">
+        <div className="max-w-6xl mx-auto">
+          <div className="mb-16 animate-fade-in-up">
+            <h2 className="text-4xl sm:text-5xl font-bold text-white gradient-text animate-fade-in-up" style={{animationDelay: '0.1s'}}>
+              {PORTFOLIO_DATA.achievements.title}
+            </h2>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {PORTFOLIO_DATA.achievements.items.map((item, idx) => (
+              <div 
+                key={idx}
+                className="border border-gray-700/50 rounded-lg p-6 hover:border-blue-500/50 transition-all duration-300 bg-gray-900/30 backdrop-blur-sm hover-glow animate-fade-in-up"
+                style={{animationDelay: `${0.2 + idx * 0.1}s`}}
+              >
+                <h3 className="text-xl font-bold text-white mb-2 gradient-text">
+                  {item.title}
+                </h3>
+                <p className="text-blue-400 font-semibold">
+                  {item.organization}
                 </p>
               </div>
             ))}
@@ -617,10 +636,7 @@ export default function App() {
       <section id="contact" className="py-24 px-6 sm:px-12 bg-gradient-to-b from-blue-950/20 to-black">
         <div className="max-w-4xl mx-auto text-center">
           <div className="mb-12 animate-fade-in-up">
-            <p className="text-xs uppercase tracking-widest text-gray-500 mb-3 font-semibold animate-slide-in-left">
-              {PORTFOLIO_DATA.contact.label}
-            </p>
-            <h2 className="text-4xl sm:text-5xl font-bold text-white mb-6 font-serif gradient-text animate-fade-in-up" style={{animationDelay: '0.1s'}}>
+            <h2 className="text-4xl sm:text-5xl font-bold text-white mb-6 gradient-text animate-fade-in-up" style={{animationDelay: '0.1s'}}>
               Get in Touch
             </h2>
             <p className="text-gray-300 text-lg leading-relaxed animate-fade-in-up" style={{animationDelay: '0.2s'}}>
