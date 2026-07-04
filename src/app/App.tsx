@@ -131,7 +131,8 @@ const PORTFOLIO_DATA = {
     title: "Skills",
     items: ["Python", "TypeScript", "JavaScript", "Java", "C/C++", "Swift", "React", "Next.js", "SQL", "HTML/CSS", "Git", "Linux", "Data Structures & Algorithms", "Machine Learning", "FastAPI", "PostgreSQL"]
   },
- achievements: {
+ 
+  achievements: {
     title: "Achievements",
     items: [
       {
