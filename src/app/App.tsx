@@ -166,7 +166,7 @@ const PORTFOLIO_DATA = {
       { label: "LinkedIn", href: "https://www.linkedin.com/in/alexwang67/", icon: "linkedin" },
       { label: "GitHub", href: "https://github.com/AlexNicholasWang", icon: "github" }
     ],
-    footer: "Alexander Wang · UCLA CS · Los Angeles, CA · 2026"
+    footer: "Alexander Wang · UCLA Math · UCLA Computer Science · Los Angeles, CA · 2026"
   }
 };
 
