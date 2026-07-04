@@ -131,9 +131,8 @@ const PORTFOLIO_DATA = {
     title: "Skills",
     items: ["Python", "TypeScript", "JavaScript", "Java", "C/C++", "Swift", "React", "Next.js", "SQL", "HTML/CSS", "Git", "Linux", "Data Structures & Algorithms", "Machine Learning", "FastAPI", "PostgreSQL"]
   },
- education: {
-    label: "Achievements",
-    title: "Awards",
+ achievements: {
+    title: "Achievements",
     items: [
       {
         title: "IMC Prosperity 4 Finalist",
@@ -153,6 +152,19 @@ const PORTFOLIO_DATA = {
       },
     ]
   },
+
+  education: {
+    title: "Education",
+    items: [
+      {
+        title: "University of California, Los Angeles",
+        date: "Expected 2028",
+        organization: "B.S. in Mathematics & Computer Science",
+        GPA: "3.8/4.0",
+      }
+    ]
+  }
+
   contact: {
     label: "Contact",
     subtitle: "Feel free to reach out. Always open to interesting conversations and opportunities.",
