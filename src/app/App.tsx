@@ -141,10 +141,20 @@ const PORTFOLIO_DATA = {
     title: "Education & Awards",
     items: [
       {
-        title: "B.S. in Mathematics of Computation",
-        organization: "University of California, Los Angeles (UCLA)",
-        date: "Expected Jun 2028",
-        description: "GPA: 3.8/4.0"
+        title: "IMC Prosperity 4 Finalist",
+        organization: "IMC Trading",
+      }
+      {
+        title: "RIT Computing Award",
+        organization: "Rochester Institute of Technology",
+      }
+      {
+        title: "National Merit Scholar",
+        organization: "National Merit Scholarship Corporation",
+      }
+      {
+        title: "November 14 Award",
+        organization: "Salesianum School",
       }
     ]
   },
