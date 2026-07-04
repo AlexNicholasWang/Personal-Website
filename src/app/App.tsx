@@ -136,26 +136,26 @@ const PORTFOLIO_DATA = {
     title: "Skills",
     items: ["Python", "TypeScript", "JavaScript", "Java", "C/C++", "Swift", "React", "Next.js", "SQL", "HTML/CSS", "Git", "Linux", "Data Structures & Algorithms", "Machine Learning", "FastAPI", "PostgreSQL"]
   },
-  education: {
+ education: {
     label: "Achievements",
     title: "Education & Awards",
     items: [
       {
         title: "IMC Prosperity 4 Finalist",
         organization: "IMC Trading",
-      }
+      },
       {
         title: "RIT Computing Award",
         organization: "Rochester Institute of Technology",
-      }
+      },
       {
         title: "National Merit Scholar",
         organization: "National Merit Scholarship Corporation",
-      }
+      },
       {
         title: "November 14 Award",
         organization: "Salesianum School",
-      }
+      },
     ]
   },
   contact: {
