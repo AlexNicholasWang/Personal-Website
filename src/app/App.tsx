@@ -16,8 +16,8 @@ const PORTFOLIO_DATA = {
     initials: "AW",
     firstName: "Alexander",
     lastName: "Wang",
-    title: "Software Developer & Researcher",
-    bio: "UCLA Mathematics of Computation student exploring AI systems, quantitative finance, and full-stack development. Focused on building elegant solutions and advancing ML research.",
+    title: "I know that I am intelligent, because I know that I know nothing. - Socrates",
+    bio: "UCLA Math & Computer Science student interestd in AI, quantitative finance, and software development.",
     socialLinks: [
       { label: "GitHub", href: "https://github.com/AlexNicholasWang", icon: "github" },
       { label: "LinkedIn", href: "https://www.linkedin.com/in/alexwang67/", icon: "linkedin" },
@@ -107,14 +107,14 @@ const PORTFOLIO_DATA = {
         description: "AI Photo Processing & Apparel Production"
       },
       {
-        company: "UCLA, BruinML Group",
+        company: "BruinML Group",
         role: "Applied Researcher",
         date: "May 2026 – Present",
         location: "Los Angeles, CA",
       },
       {
         company: "University of Delaware (GEMS REU)",
-        role: "Visiting Researcher",
+        role: "Student Researcher",
         date: "Jun 2026 – Aug 2026",
         location: "Newark, DE",
         description: "Markov Chains & Random Walks"
