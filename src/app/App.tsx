@@ -64,16 +64,16 @@ const PORTFOLIO_DATA = {
         ]
       },
       {
-        title: "Dragon's Hoard",
-        description: "Self-hosted file storage with encryption and versioning. Secure, scalable data management.",
+        title: "Ton-619",
+        description: "Black Hole Simulator that visualizes the event horizon and gravitational lensing. Built with physics-based rendering and interactive controls.",
         tags: ["Go", "Cloud Storage", "Security"],
         links: [
           { label: "GitHub", href: "https://github.com/AlexNicholasWang", icon: "github" }
         ]
       },
       {
-        title: "The Oracle",
-        description: "Minimal CLI for querying LLMs. Streams tokens, supports system prompts, makes AI accessible from terminal.",
+        title: "GaussLab",
+        description: "RREF Calculator and Linear Algebra Toolkit for solving systems of equations. Built with Python and CLI interface.",
         tags: ["Python", "CLI", "LLM"],
         links: [
           { label: "GitHub", href: "https://github.com/AlexNicholasWang", icon: "github" }
@@ -90,29 +90,45 @@ const PORTFOLIO_DATA = {
         role: "Quantitative Analyst",
         date: "Jul 2026 – Sep 2026",
         location: "New York City, NY",
-        description: "Generated signals from options data and constructed volatility indices for Shanghai Stock Exchange trading strategies."
+        description: "Alpha Research & Quantitative Trading"
+      },
+      {
+        company: "Petrarch (YC S26)",
+        role: "Constellation Fellow",
+        date: "Jul 2026 – Sep 2026",
+        location: "San Francisco, CA",
+        description: "Petrarch (YC S26)"
       },
       {
         company: "Speeder Solutions LLC",
         role: "Software Engineer Intern",
         date: "Jun 2025 – Aug 2025",
         location: "New Castle, DE",
-        description: "Designed async batch inference pipeline and implemented quantization optimizations for model deployment."
+        description: "AI Photo Processing & Apparel Production"
       },
       {
         company: "UCLA, BruinML Group",
-        role: "Undergraduate Researcher",
+        role: "Applied Researcher",
         date: "May 2026 – Present",
         location: "Los Angeles, CA",
-        description: "Researching emergent intelligence in pretrained models and ontology-based LLM fine-tuning frameworks."
       },
       {
         company: "University of Delaware (GEMS REU)",
         role: "Visiting Researcher",
         date: "Jun 2026 – Aug 2026",
         location: "Newark, DE",
-        description: "Investigated spectral properties and mixing time bounds for random walks on complex graph structures."
+        description: "Markov Chains & Random Walks"
       },
+
+      {
+        company: "Johns Hopkins University",
+        role: "Biomedical Research Intern",
+        date: "Jul 2023 – Aug 2023",
+        location: "Baltimore, MD",
+        description: "Peptides & Anti-cancer Drug Devlopment"
+      },
+
+
     ]
   },
   skillsSection: {
