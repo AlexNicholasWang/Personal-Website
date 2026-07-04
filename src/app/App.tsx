@@ -12,12 +12,12 @@ const PORTFOLIO_DATA = {
     ]
   },
   hero: {
-    tag: "Software Developer",
+    tag: "Software Developer & Researcher",
     initials: "AW",
     firstName: "Alexander",
     lastName: "Wang",
-    title: "UCLA Mathematics & Computer Science",
-    bio: "2nd year undergraduate interested in AI & Quantitative Finance",
+    title: "I know that I am intelligent, because I know that I know nothing - Socrates",
+    bio: "2nd year undergraduate interested in AI, quantitative finance, and software development.",
     socialLinks: [
       { label: "GitHub", href: "https://github.com/AlexNicholasWang", icon: "github" },
       { label: "LinkedIn", href: "https://www.linkedin.com/in/alexwang67/", icon: "linkedin" },
@@ -144,7 +144,7 @@ const PORTFOLIO_DATA = {
   },
 
   achievements: {
-    title: "Achievements",
+    title: "Awards & Achievements",
     items: [
       {
         title: "IMC Prosperity 4 Finalist",
@@ -383,14 +383,17 @@ export default function App() {
           </div>
         </div>
 
-        {/* Profile Circle - Initials */}
+        {/* Profile Circle - Photo */}
         <div className="mb-12 animate-scale-in" style={{animationDelay: loaded ? '0.4s' : '0s'}}>
-          <div className="w-32 h-32 sm:w-40 sm:h-40 rounded-full border-2 border-blue-500/50 bg-gradient-to-br from-blue-600/20 to-blue-900/20 flex items-center justify-center glow-blue hover-glow transform transition-all duration-300 hover:border-blue-400"
+          <div className="w-32 h-32 sm:w-40 sm:h-40 rounded-full border-2 border-blue-500/50 glow-blue hover-glow overflow-hidden transform transition-all duration-300 hover:border-blue-400"
             style={{opacity: loaded ? 1 : 0, transform: loaded ? 'scale(1)' : 'scale(0.8)', transition: 'all 0.6s ease-out 0.4s'}}
           >
-            <span className="text-5xl sm:text-6xl font-bold bg-gradient-to-br from-blue-400 to-blue-200 bg-clip-text text-transparent">
-              {PORTFOLIO_DATA.hero.initials}
-            </span>
+            <img 
+              src="/logo.jpg"
+              alt="Alexander Wang"
+              className="w-full h-full object-cover"
+              loading="eager"
+            />
           </div>
         </div>
 
