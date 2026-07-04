@@ -16,8 +16,8 @@ const PORTFOLIO_DATA = {
     initials: "AW",
     firstName: "Alexander",
     lastName: "Wang",
-    title: "I know that I am intelligent, because I know that I know nothing. - Socrates",
-    bio: "UCLA Math & Computer Science student interestd in AI, quantitative finance, and software development.",
+    title: "I know that I am intelligent, because I know that I know nothing - Socrates",
+    bio: "2nd year undergraduate interested in AI, quantitative finance, and software development.",
     socialLinks: [
       { label: "GitHub", href: "https://github.com/AlexNicholasWang", icon: "github" },
       { label: "LinkedIn", href: "https://www.linkedin.com/in/alexwang67/", icon: "linkedin" },
@@ -163,7 +163,7 @@ const PORTFOLIO_DATA = {
         GPA: "3.8/4.0",
       }
     ]
-  }
+  },
 
   contact: {
     label: "Contact",
