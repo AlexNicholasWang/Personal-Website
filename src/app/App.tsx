@@ -83,6 +83,13 @@ const PORTFOLIO_DATA = {
     title: "Work Experience",
     items: [
       {
+        company: "Golden Keys Realty Group",
+        role: "Software Engineer Intern",
+        location: "Remote",
+        date: "Jul 2026 - Sep 2026",
+        description: "Tenant Dashboard & Customer Service."
+      }
+      {
         company: "Manispace Capital",
         role: "Quantitative Analyst",
         date: "Jul 2026 – Sep 2026",
