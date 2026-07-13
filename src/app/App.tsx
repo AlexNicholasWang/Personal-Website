@@ -88,20 +88,13 @@ const PORTFOLIO_DATA = {
         location: "Remote",
         date: "Jul 2026 - Sep 2026",
         description: "Tenant Dashboard & Customer Service."
-      }
+      },
       {
         company: "Manispace Capital",
         role: "Quantitative Analyst",
         date: "Jul 2026 – Sep 2026",
         location: "New York City, NY",
         description: "Alpha Research & Quantitative Trading"
-      },
-      {
-        company: "Petrarch (YC S26)",
-        role: "Constellation Fellow",
-        date: "Jul 2026 – Sep 2026",
-        location: "San Francisco, CA",
-        description: "Petrarch (YC S26)"
       },
       {
         company: "University of Delaware (GEMS REU)",
