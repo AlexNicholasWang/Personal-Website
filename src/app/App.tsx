@@ -85,7 +85,7 @@ const PORTFOLIO_DATA = {
       {
         company: "Golden Keys Realty Group",
         role: "Software Engineer Intern",
-        location: "Remote",
+        location: "Elkton, MD",
         date: "Jul 2026 - Sep 2026",
         description: "Tenant Dashboard & Customer Service."
       },
