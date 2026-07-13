@@ -97,8 +97,8 @@ const PORTFOLIO_DATA = {
         description: "Alpha Research & Quantitative Trading"
       },
       {
-        company: "University of Delaware (GEMS REU)",
-        role: "Student Researcher",
+        company: "University of Delaware",
+        role: "Visiting Student Researcher",
         date: "Jun 2026 – Aug 2026",
         location: "Newark, DE",
         description: "Markov Chains & Random Walks"
@@ -106,7 +106,7 @@ const PORTFOLIO_DATA = {
       {
         company: "BruinML Group",
         role: "Applied Researcher",
-        date: "May 2026 – Present",
+        date: "Jan 2026 – Present",
         location: "Los Angeles, CA",
       },
       {
