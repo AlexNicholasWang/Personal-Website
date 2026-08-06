@@ -70,9 +70,9 @@ const PORTFOLIO_DATA = {
         ]
       },
       {
-        title: "GaussLab",
-        description: "RREF Calculator and Linear Algebra Toolkit for solving systems of equations. Built with Python and CLI interface.",
-        tags: ["Python", "Mathematics", "CLI"],
+        title: "InkWells",
+        description: "AI Photo Editing Tool",
+        tags: ["Python", "AI", "FastAPI"],
         links: [
           { label: "GitHub", href: "https://github.com/AlexNicholasWang", icon: "github" }
         ]
@@ -83,31 +83,39 @@ const PORTFOLIO_DATA = {
     title: "Work Experience",
     items: [
       {
-        company: "Golden Keys Realty Group",
+        company: "Dreach (YC P26)",
         role: "Software Engineer Intern",
-        location: "Elkton, MD",
-        date: "Jul 2026 - Sep 2026",
-        description: "Tenant Dashboard & Customer Service."
+        date: "Sep 2026 - Dec 2026",
+        location: "San Francisco, CA",
+        description: "Incoming Fall 2026"
       },
       {
         company: "Manispace Capital",
-        role: "Quantitative Analyst",
-        date: "Jul 2026 – Sep 2026",
+        role: "Quantitative Research Intern",
+        date: "Jun 2026 – Sep 2026",
         location: "New York City, NY",
-        description: "Alpha Research & Quantitative Trading"
+        description: "Futures Research & Backtesting"
       },
       {
         company: "University of Delaware",
-        role: "Visiting Student Researcher",
+        role: "Researcher: Directed Reading Program",
         date: "Jun 2026 – Aug 2026",
         location: "Newark, DE",
-        description: "Markov Chains & Random Walks"
+        description: "Random Walks (Advised by Prof. Sebastian Cioaba)"
       },
       {
         company: "BruinML Group",
-        role: "Applied Researcher",
-        date: "Jan 2026 – Present",
+        role: "Machine Learning Researcher",
+        date: "Jan 2026 – Aug 2026",
         location: "Los Angeles, CA",
+        description: "Ontology-LLM Verification & Emergent Intelligence"
+      },
+      {
+        company: "Golden Keys Realty Group",
+        role: "Software Engineer Intern",
+        location: "Elkton, MD",
+        date: "Jan 2026 - Apr 2026",
+        description: "Tenant Dashboard & Customer Service."
       },
       {
         company: "Speeder Solutions LLC",
@@ -119,7 +127,7 @@ const PORTFOLIO_DATA = {
       {
         company: "Johns Hopkins University",
         role: "Biomedical Research Intern",
-        date: "Jul 2023 – Aug 2023",
+        date: "Jun 2023 – Aug 2023",
         location: "Baltimore, MD",
         description: "Peptides & Anti-cancer Drug Devlopment"
       },
