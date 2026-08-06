@@ -47,15 +47,15 @@ const PORTFOLIO_DATA = {
     items: [
       {
         title: "PetaLux",
-        description: "A mechanical-blooming flower lamp that destroys darkness. Creative hardware-software hybrid exploring physical design and code.",
-        tags: ["Swift", "Hardware", "IoT"],
+        description: "A mechanical-blooming flower lamp",
+        tags: ["Swift", "Hardware", "Arduino"],
         links: [
           { label: "GitHub", href: "https://github.com/AlexNicholasWang", icon: "github" }
         ]
       },
       {
         title: "Cosmas",
-        description: "AI Benefits Eligibility Agent that fights for your perks. Built with modern AI integration and intuitive UX.",
+        description: "AI Benefits Eligibility Agent",
         tags: ["TypeScript", "AI", "React"],
         links: [
           { label: "GitHub", href: "https://github.com/AlexNicholasWang", icon: "github" }
@@ -63,7 +63,7 @@ const PORTFOLIO_DATA = {
       },
       {
         title: "Ton-619",
-        description: "Black Hole Simulator that visualizes the event horizon and gravitational lensing. Built with physics-based rendering and interactive controls.",
+        description: "Black Hole Simulator",
         tags: ["Python", "Physics", "Simulation"],
         links: [
           { label: "GitHub", href: "https://github.com/AlexNicholasWang", icon: "github" }
@@ -154,10 +154,6 @@ const PORTFOLIO_DATA = {
   achievements: {
     title: "Achievements",
     items: [
-      {
-        title: "IMC Prosperity 4 Finalist",
-        organization: "IMC Trading",
-      },
       {
         title: "RIT Computing Award",
         organization: "Rochester Institute of Technology",
