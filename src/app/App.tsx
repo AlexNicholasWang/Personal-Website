@@ -83,13 +83,6 @@ const PORTFOLIO_DATA = {
     title: "Work Experience",
     items: [
       {
-        company: "Dreach (YC P26)",
-        role: "Software Engineer Intern",
-        date: "Sep 2026 - Dec 2026",
-        location: "San Francisco, CA",
-        description: "Incoming Fall 2026"
-      },
-      {
         company: "Manispace Capital",
         role: "Quantitative Research Intern",
         date: "Jun 2026 – Sep 2026",
