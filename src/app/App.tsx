@@ -46,11 +46,11 @@ const PORTFOLIO_DATA = {
     title: "Featured Projects",
     items: [
       {
-        title: "PetaLux",
-        description: "A mechanical-blooming flower lamp",
-        tags: ["Swift", "Hardware", "Arduino"],
+        title: "Keyfolio",
+        description: "Property management platform for landlords and tenants",
+        tags: ["TypeScript", "React", "Full-Stack"],
         links: [
-          { label: "GitHub", href: "https://github.com/AlexNicholasWang", icon: "github" }
+          { label: "Visit site", href: "https://goldenkeyscapital.app/", icon: "external" }
         ]
       },
       {
@@ -58,7 +58,7 @@ const PORTFOLIO_DATA = {
         description: "AI Benefits Eligibility Agent",
         tags: ["TypeScript", "AI", "React"],
         links: [
-          { label: "GitHub", href: "https://github.com/AlexNicholasWang", icon: "github" }
+          { label: "Visit site", href: "https://cosmas.cfd/", icon: "external" }
         ]
       },
       {
@@ -66,7 +66,7 @@ const PORTFOLIO_DATA = {
         description: "Black Hole Simulator",
         tags: ["Python", "Physics", "Simulation"],
         links: [
-          { label: "GitHub", href: "https://github.com/AlexNicholasWang", icon: "github" }
+          { label: "Visit site", href: "https://ton619.cfd/", icon: "external" }
         ]
       },
       {
@@ -74,7 +74,7 @@ const PORTFOLIO_DATA = {
         description: "AI Photo Editing Tool",
         tags: ["Python", "AI", "FastAPI"],
         links: [
-          { label: "GitHub", href: "https://github.com/AlexNicholasWang", icon: "github" }
+          { label: "Visit site", href: "https://inkwell.pics/", icon: "external" }
         ]
       }
     ]
