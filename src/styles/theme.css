@@ -2,23 +2,36 @@
 
 :root {
   --font-size: 16px;
-  --background: #ffffff;
-  --foreground: #111827;
-  --card: #f3f4f6;
-  --card-foreground: #111827;
+  /* dreach.ai-style marketing palette */
+  --marketing-bg: #fafbf8;
+  --marketing-surface: #ffffff;
+  --marketing-surface-raised: #f7f8f5;
+  --marketing-stroke: #e2e8f0;
+  --marketing-stroke-strong: #cbd5e1;
+  --marketing-text-primary: #0f172a;
+  --marketing-text-secondary: #334155;
+  --marketing-text-muted: #64748b;
+  --marketing-accent: #2563eb;
+  --marketing-accent-hover: #1d4ed8;
+  --marketing-accent-soft: #eff6ff;
+
+  --background: var(--marketing-bg);
+  --foreground: var(--marketing-text-primary);
+  --card: var(--marketing-surface);
+  --card-foreground: var(--marketing-text-primary);
   --popover: #ffffff;
-  --popover-foreground: #111827;
-  --primary: #111827;
+  --popover-foreground: var(--marketing-text-primary);
+  --primary: var(--marketing-accent);
   --primary-foreground: #ffffff;
-  --secondary: #f3f4f6;
-  --secondary-foreground: #111827;
-  --muted: #e5e7eb;
-  --muted-foreground: #6b7280;
-  --accent: #3b82f6;
+  --secondary: #f1f5f9;
+  --secondary-foreground: var(--marketing-text-primary);
+  --muted: #f1f5f9;
+  --muted-foreground: var(--marketing-text-muted);
+  --accent: var(--marketing-accent);
   --accent-foreground: #ffffff;
   --destructive: #ef4444;
   --destructive-foreground: #ffffff;
-  --border: #e5e7eb;
+  --border: var(--marketing-stroke);
   --input: #ffffff;
   --input-background: #f9fafb;
   --switch-background: #e5e7eb;
@@ -132,28 +145,10 @@
     font-size: var(--font-size);
   }
 
-  h1 {
-    font-size: var(--text-2xl);
-    font-weight: var(--font-weight-medium);
-    line-height: 1.5;
-  }
-
-  h2 {
-    font-size: var(--text-xl);
-    font-weight: var(--font-weight-medium);
-    line-height: 1.5;
-  }
-
-  h3 {
-    font-size: var(--text-lg);
-    font-weight: var(--font-weight-medium);
-    line-height: 1.5;
-  }
-
-  h4 {
-    font-size: var(--text-base);
-    font-weight: var(--font-weight-medium);
-    line-height: 1.5;
+  h1, h2, h3, h4 {
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    line-height: 1.15;
   }
 
   label {
