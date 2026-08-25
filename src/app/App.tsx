@@ -83,31 +83,45 @@ const PORTFOLIO_DATA = {
     title: "Work Experience",
     items: [
       {
+        company: "UCLA Mathematics",
+        role: "Undergraduate Researcher",
+        date: "Aug 2026 – Present",
+        location: "Westwood, CA",
+        description: "MSF Group & DRP (Fall 26')"
+      },
+      {
+        company: "University of Illinois Urbana-Champaign, SALT Lab",
+        role: "Visiting Researcher",
+        date: "Aug 2026 – Present",
+        location: "Urbana, IL",
+        description: "Data Leakage on AI Agents"
+      },
+      {
         company: "Manispace Capital",
-        role: "Quantitative Research Intern",
-        date: "Jun 2026 – Sep 2026",
+        role: "Quantitative Developer Intern",
+        date: "Jun 2026 – Aug 2026",
         location: "New York City, NY",
-        description: "Futures Research & Backtesting"
+        description: "Backtest Infra & PCA Alpha"
       },
       {
         company: "University of Delaware",
-        role: "Researcher: Directed Reading Program",
+        role: "Researcher: Directed Research Program",
         date: "Jun 2026 – Aug 2026",
         location: "Newark, DE",
-        description: "Random Walks (Advised by Prof. Sebastian Cioaba)"
+        description: "Random Walks & Expander Graphs"
       },
       {
         company: "BruinML Group",
         role: "Machine Learning Researcher",
         date: "Jan 2026 – Aug 2026",
         location: "Los Angeles, CA",
-        description: "Ontology-LLM Verification & Emergent Intelligence"
+        description: "Emergent Intelligence"
       },
       {
         company: "Golden Keys Realty Group",
         role: "Software Engineer Intern",
         location: "Elkton, MD",
-        date: "Jan 2026 - Apr 2026",
+        date: "Jan 2026 - Mar 2026",
         description: "Tenant Dashboard & Customer Service."
       },
       {
