@@ -28,18 +28,11 @@ const PORTFOLIO_DATA = {
     label: "Toolkit",
     title: "Core Competencies",
     items: [
-      "React",
-      "TypeScript",
-      "JavaScript",
-      "Vite",
       "Python",
-      "Node.js",
+      "C++",
       "Git",
-      "Web Development",
-      "Frontend Development",
-      "UI/UX Design",
-      "API Integration",
-      "Database Design"
+      "Data Structures & Algorithms",
+      "Machine Learning",
     ]
   },
   projects: {
