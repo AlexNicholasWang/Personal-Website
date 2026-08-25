@@ -136,7 +136,7 @@ const PORTFOLIO_DATA = {
   skillsSection: {
     label: "Expertise",
     title: "Skills",
-    items: ["Python", "TypeScript", "JavaScript", "Java", "C/C++", "Swift", "React", "Next.js", "SQL", "HTML/CSS", "Git", "Linux", "Data Structures & Algorithms", "Machine Learning", "FastAPI", "PostgreSQL"]
+    items: ["Python", "Java", "C/C++", "Swift", "Git", "Data Structures & Algorithms", "Machine Learning"]
   },
 
   education: {
