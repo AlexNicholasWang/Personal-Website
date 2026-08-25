@@ -12,12 +12,12 @@ const PORTFOLIO_DATA = {
     ]
   },
   hero: {
-    tag: "Software Developer",
+    tag: "Orthodox Catecuhemen",
     initials: "AW",
     firstName: "Alexander",
     lastName: "Wang",
-    title: "UCLA Mathematics & Computer Science",
-    bio: "2nd year undergraduate interested in AI & Quantitatve Finance",
+    title: "UCLA Math & CS",
+    bio: "Undergraduate interested in AI & Quantitative Finance",
     socialLinks: [
       { label: "GitHub", href: "https://github.com/AlexNicholasWang", icon: "github" },
       { label: "LinkedIn", href: "https://www.linkedin.com/in/alexwang67/", icon: "linkedin" },
