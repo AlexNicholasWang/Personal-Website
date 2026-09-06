@@ -71,8 +71,8 @@ const PORTFOLIO_DATA = {
         ]
       },
       {
-        title: "Euler Chess Engine",
-        description: "Chess engine with an interactive web interface",
+        title: "Chess Engine",
+        description: "Chess engine with Leonhard Euler's Twist",
         tags: ["Chess", "Algorithms", "Game AI"],
         links: [
           { label: "Visit site", href: "https://eulerchessengine.site/", icon: "external" }
@@ -83,7 +83,7 @@ const PORTFOLIO_DATA = {
         description: "Interactive solver for optimal Tic-Tac-Toe play",
         tags: ["Algorithms", "Game Theory", "Web"],
         links: [
-          { label: "Visit site", href: "https://tictactoesolver.vercel.app/", icon: "external" }
+          { label: "Visit site", href: "https://tictactoesolver.fun/", icon: "external" }
         ]
       }
     ]
@@ -94,14 +94,14 @@ const PORTFOLIO_DATA = {
       {
         company: "UCLA Mathematics",
         role: "Undergraduate Researcher",
-        date: "Aug 2026 – Present",
+        date: "Sep 2026 – Present",
         location: "Westwood, CA",
         description: "MSF Group & DRP (Fall 26')"
       },
       {
         company: "University of Illinois Urbana-Champaign, SALT Lab",
         role: "Visiting Researcher",
-        date: "Aug 2026 – Present",
+        date: "Sep 2026 – Present",
         location: "Urbana, IL",
         description: "Data Leakage on AI Agents"
       },
