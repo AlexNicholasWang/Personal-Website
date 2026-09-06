@@ -69,6 +69,22 @@ const PORTFOLIO_DATA = {
         links: [
           { label: "Visit site", href: "https://inkwell.pics/", icon: "external" }
         ]
+      },
+      {
+        title: "Euler Chess Engine",
+        description: "Chess engine with an interactive web interface",
+        tags: ["Chess", "Algorithms", "Game AI"],
+        links: [
+          { label: "Visit site", href: "https://eulerchessengine.site/", icon: "external" }
+        ]
+      },
+      {
+        title: "Tic-Tac-Toe Solver",
+        description: "Interactive solver for optimal Tic-Tac-Toe play",
+        tags: ["Algorithms", "Game Theory", "Web"],
+        links: [
+          { label: "Visit site", href: "https://tictactoesolver.vercel.app/", icon: "external" }
+        ]
       }
     ]
   },
