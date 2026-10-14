@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import { ArrowDownRight, ArrowUpRight, Github, Linkedin, Mail, Menu, X } from "lucide-react";
-import "./portfolio.css";
 
 const experience = [
   { role: "Undergraduate Researcher", place: "UCLA Mathematics · Mathematical & Statistical Finance", period: "2026 — Present", detail: "Statistical modeling, market microstructure, and equity order flow." },
